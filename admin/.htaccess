@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteRule  ^order/([0-9]+)/page/([0-9]+)/$                                    index.php?section=order&status=$1&page=$2 [L]
+RewriteRule  ^order/([0-9]+)/page/([0-9]+)$                                     index.php?section=order&status=$1&page=$2 [QSA,L]
+RewriteRule  ^order/([0-9]+)/$                                                  index.php?section=order&status=$1 [L]
+RewriteRule  ^order/([0-9]+)$                                                   index.php?section=order&status=$1 [QSA,L]
+RewriteRule  ^order/page/([0-9]+)/$                                             index.php?section=order&page=$1 [L]
+RewriteRule  ^order/page/([0-9]+)$                                              index.php?section=order&page=$1 [QSA,L]
+RewriteRule  ^order/$											                index.php?section=order [L]
+RewriteRule  ^order$													        index.php?section=order [QSA,L]
+
+RewriteRule  ^([a-zA-Z0-9_-]+)/page/([0-9]+)/$								    index.php?section=$1&page=$2 [L]
+RewriteRule  ^([a-zA-Z0-9_-]+)/page/([0-9]+)$									index.php?section=$1&page=$2 [QSA,L]
+RewriteRule  ^([a-zA-Z0-9_-]+)/$												index.php?section=$1 [L]
+RewriteRule  ^([a-zA-Z0-9_-]+)$													index.php?section=$1 [QSA,L]

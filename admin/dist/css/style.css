@@ -1,0 +1,209 @@
+.invisible {
+    display: none;
+}
+
+.fixed .content-wrapper2 {
+    padding-top: 50px;
+}
+
+.content-wrapper2 {
+    min-height: 100%;
+    background-color: #ecf0f5;
+    z-index: 800;
+}
+
+.content-wrapper2, .main-footer2 {
+    -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,margin .3s ease-in-out;
+    transition: transform .3s ease-in-out,margin .3s ease-in-out;
+    z-index: 820;
+}
+
+.main-footer2 {
+    background: #fff;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+}
+
+.lefttalign {
+    text-align: left;
+}
+
+.centertalign {
+    text-align: center;
+}
+
+.marginlrauto {
+    margin: 0px auto;
+}
+
+.margintop50 {
+    margin-top: 50px;
+}
+
+.margintop10 {
+    margin-top: 10px;
+}
+
+.margintopbot100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.castpix {
+    display: inline-block;
+	left: 0px !important;
+    width: 100px !important;
+    margin: 0px 10px 10px 0px;
+}
+
+.cursorpoint {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lgraybg {
+    background: #DDD;
+}
+
+.tdmobile { display: table-cell; }
+
+.marginbottom5 {
+    margin-bottom: 5px;
+}
+
+.marginbottom10 {
+    margin-bottom: 10px;
+}
+
+.marginbottom20 {
+    margin-bottom: 20px;
+}
+
+.marginright10 {
+    margin-right: 10px;
+}
+
+.pages div {
+    display: inline;
+    margin-right: 5px;
+}
+
+.fdata {
+    display: block;
+    margin: 3px 0px;
+}
+
+.fdataleft {
+    display: inline-block;
+    width: 66%;
+    text-align: left;
+}
+
+.fdataright {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+.valigntop {
+    vertical-align: top;
+}
+
+.smalltxt {
+    font-size: 11px;
+}
+
+.statbarbig {
+    display: block;
+    padding: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* BG AND BORDER */
+
+.blkbg {
+	background-color: #000 !important;
+	color: #FFF;
+}
+
+.dredbg {
+	background-color: #a00005 !important;
+}
+
+.redbg {
+	background-color: #ea171f !important;
+}
+
+.lredbg {
+	background-color: #ef393f !important;
+}
+
+.redbgarrow {
+	background: url(../images/arrowup.png) bottom center no-repeat #ea171f !important;
+}
+
+.tealbg {
+	background-color: #9C9 !important;
+}
+
+.whitebg {
+	background-color: #FFF !important;
+}
+
+.dwhitebg {
+	background-color: #EEE !important;
+}
+
+.bluebg {
+	background-color: #003399 !important;
+}
+
+.blkbg2 {
+	background-color: #000;
+}
+
+.blkbg3 {
+	background-color: #1c1610;
+}
+
+.yellowbg {
+	background-color: #FF0;
+}
+
+.greenbg {
+    background-color: #060;
+}
+
+.orangebg {
+    background-color: #d39000;
+}
+	
+.dgraybg {
+	background-color: #3f3f3f !important;
+}
+	
+.lgraybg {
+	background-color: #f9f9f9 !important;
+}
+	
+.lgraybg2 {
+	background-color: #efefef !important;
+}
+
+@media (max-width: 767px) {
+    
+    .tdmobile { display: none; }
+    
+    .wysihtml5-sandbox, textarea { width: 100% !important; }
+    
+}

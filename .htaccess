@@ -1,0 +1,47 @@
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteRule  ^shop/page/([0-9]+)/$										        index.php?section=shop&page=$1 [L]
+RewriteRule  ^shop/page/([0-9]+)$										        index.php?section=shop&page=$1 [QSA,L]
+RewriteRule  ^shop/([0-9]+)/([a-zA-Z0-9_-](.+)+)/$                              index.php?section=shop&id=$1 [L]
+RewriteRule  ^shop/([0-9]+)/([a-zA-Z0-9_-](.+)+)$                               index.php?section=shop&id=$1 [QSA,L]
+RewriteRule  ^shop/([0-9]+)/$										            index.php?section=shop&id=$1 [L]
+RewriteRule  ^shop/([0-9]+)$													index.php?section=shop&id=$1 [QSA,L]
+RewriteRule  ^shop/$												            index.php?section=shop [L]
+RewriteRule  ^shop$													            index.php?section=shop [QSA,L]
+
+RewriteRule  ^whatsnew/page/([0-9]+)/$										    index.php?section=whatsnew&page=$1 [L]
+RewriteRule  ^whatsnew/page/([0-9]+)$										    index.php?section=whatsnew&page=$1 [QSA,L]
+RewriteRule  ^whatsnew/([0-9]+)/([a-zA-Z0-9_-](.+)+)/$                          index.php?section=whatsnew&id=$1 [L]
+RewriteRule  ^whatsnew/([0-9]+)/([a-zA-Z0-9_-](.+)+)$                           index.php?section=whatsnew&id=$1 [QSA,L]
+RewriteRule  ^whatsnew/([0-9]+)/$										        index.php?section=whatsnew&id=$1 [L]
+RewriteRule  ^whatsnew/([0-9]+)$												index.php?section=whatsnew&id=$1 [QSA,L]
+RewriteRule  ^whatsnew/$												        index.php?section=whatsnew [L]
+RewriteRule  ^whatsnew$													        index.php?section=whatsnew [QSA,L]
+
+RewriteRule  ^career/page/([0-9]+)/$										    index.php?section=career&page=$1 [L]
+RewriteRule  ^career/page/([0-9]+)$										        index.php?section=career&page=$1 [QSA,L]
+RewriteRule  ^career/([0-9]+)/([a-zA-Z0-9_-](.+)+)/$                            index.php?section=career&id=$1 [L]
+RewriteRule  ^career/([0-9]+)/([a-zA-Z0-9_-](.+)+)$                             index.php?section=career&id=$1 [QSA,L]
+RewriteRule  ^career/([0-9]+)/$										            index.php?section=career&id=$1 [L]
+RewriteRule  ^career/([0-9]+)$												    index.php?section=career&id=$1 [QSA,L]
+RewriteRule  ^career/$												            index.php?section=career [L]
+RewriteRule  ^career$													        index.php?section=career [QSA,L]
+
+RewriteRule  ^activate/([a-zA-Z0-9_-](.+)+)/$                                   index.php?section=activate&id=$1 [L]
+RewriteRule  ^activate/([a-zA-Z0-9_-](.+)+)$                                    index.php?section=activate&id=$1 [QSA,L]
+RewriteRule  ^activate/$											            index.php?section=activate [L]
+RewriteRule  ^activate$													        index.php?section=activate [QSA,L]
+
+RewriteRule  ^mapmarker/([a-zA-Z0-9_-](.+)+)/$                                  index.php?section=mapmarker&search=$1 [L]
+RewriteRule  ^mapmarker/([a-zA-Z0-9_-](.+)+)$                                   index.php?section=mapmarker&search=$1 [QSA,L]
+RewriteRule  ^mapmarker/$											            index.php?section=mapmarker [L]
+RewriteRule  ^mapmarker$													    index.php?section=mapmarker [QSA,L]
+
+RewriteRule  ^locator/([a-zA-Z0-9_-](.+)+)/$                                    index.php?section=locator&sstore=$1 [L]
+RewriteRule  ^locator/([a-zA-Z0-9_-](.+)+)$                                     index.php?section=locator&sstore=$1 [QSA,L]
+RewriteRule  ^locator/$											                index.php?section=locator [L]
+RewriteRule  ^locator$													        index.php?section=locator [QSA,L]
+
+RewriteRule  ^([a-zA-Z0-9_-]+)/$												index.php?section=$1 [L]
+RewriteRule  ^([a-zA-Z0-9_-]+)$													index.php?section=$1 [QSA,L]
